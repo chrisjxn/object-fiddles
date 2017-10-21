@@ -8,6 +8,10 @@
 
   //Code here
 
+  var me = {
+    name: 'Chris',
+    age: 102
+  }
 
 
 
@@ -22,6 +26,14 @@
 
   //Code here
 
+  var favoriteThings = {
+    band: 'Pearl Jam',
+    food: 'pizza',
+    person: 'Roosevelt',
+    book: 'Founders at Work',
+    movie: 'Megamind',
+    holiday: 'Christmas'
+  }
 
 
 
@@ -32,6 +44,8 @@
 
   //Code here
 
+  favoriteThings.car = 'Porsche';
+  favoriteThings.brand = 'Porsche';
 
 
 
@@ -40,7 +54,8 @@
 
   //Code here
 
-
+  favoriteThings.food = 'Chicken Nuggets';
+  favoriteThings.book = 'Harry Potter';
 
 
 
@@ -60,6 +75,12 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
+  var backPack = {};
+
+  var item = 'firstPocket';
+
+  backPack[item] = 'chapstick';
+  backPack.color = 'green';
 
 
 
@@ -69,6 +90,7 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
+  alert(backPack);
  
 
 /*
@@ -79,6 +101,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
   //Code here
 
+  console.log(backPack);
 
 
 
@@ -101,6 +124,8 @@ var user2 = {
 
   //Code Here
 
+  user2.name = 'Tyler S. McGinnis';
+  user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -123,8 +148,9 @@ var user2 = {
 
   //Code Here
 
+  var methodCollection = {};
 
-
+  
 
 /*
 Now add two methods (functions that are properties on objects) to your methodCollection
@@ -133,6 +159,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
  */
 
   //Code Here
+
+  
 
 
 
@@ -158,8 +186,15 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
+  var makePerson = (name, birthday, ssn) => {
+    return {
+      name,
+      birthday,
+      ssn
+    }
+  }
 
-
+  makePerson('Jason Bourne', 'classified', 'classified');
 
 
   
@@ -173,4 +208,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
+  var makeCard = (cardNumber, expirationDate, securityCode) => {
+    return {
+      cardNumber,
+      expirationDate,
+      securityCode
+    }
+  }
+
+  makeCard(1234, '06/2000', 123);
 
